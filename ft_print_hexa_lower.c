@@ -6,13 +6,13 @@
 /*   By: fbazaz <fbazaz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 20:53:08 by fbazaz            #+#    #+#             */
-/*   Updated: 2023/11/26 18:36:50 by fbazaz           ###   ########.fr       */
+/*   Updated: 2023/11/27 15:32:06 by fbazaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void	ft_print(unsigned long num)
+static void	ft_print(unsigned int num)
 {
 	char	*hex;
 
@@ -28,11 +28,18 @@ static void	ft_print(unsigned long num)
 
 int	ft_print_hexa_lower(va_list list)
 {
-	unsigned long	num;
+	unsigned int	num;
 	int				len;
 
-	num = va_arg(list, unsigned long);
-	len = ft_intlen(num, 16);
+	num = va_arg(list, unsigned int);
+	len = 0;
 	ft_print(num);
+	if (num == 0)
+		len++;
+	while (num != 0)
+	{
+		len++;
+		num /= 16;
+	}
 	return (len);
 }

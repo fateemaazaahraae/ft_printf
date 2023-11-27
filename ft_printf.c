@@ -6,7 +6,7 @@
 /*   By: fbazaz <fbazaz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 19:53:12 by fbazaz            #+#    #+#             */
-/*   Updated: 2023/11/26 20:50:14 by fbazaz           ###   ########.fr       */
+/*   Updated: 2023/11/27 15:37:17 by fbazaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,12 +67,13 @@ int	ft_printf(const char *s, ...)
 }
 
 /* #include <stdio.h>
+#include <limits.h>
 int	main(void)
 {
 	char *o = "hello";
 
-	ft_printf("%i\n", ft_printf("ali%"));
-	printf("%i\n", printf("ali%"));
+	ft_printf("%i\n", ft_printf("hello%"));
+	printf("%i\n", printf("hello%"));
 	ft_printf("----------------------------------\n");
 	ft_printf("%i\n", ft_printf("%s ", "hello world"));
 	printf("%i\n", printf("%s ", "hello world"));
@@ -97,4 +98,32 @@ int	main(void)
 	ft_printf("-----------------------------------\n");
 	printf("%i\n", printf("%p ", o));
 	ft_printf("%i\n", ft_printf("%p ", o));
-}  */
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -1));
+	printf("%i\n", printf("%x ", -1));
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -9));
+	printf("%i\n", printf("%x ", -9));
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -10));
+	printf("%i\n", printf("%x ", -10));
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -11));
+	printf("%i\n", printf("%x ", -11));
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -14));
+	printf("%i\n", printf("%x ", -14));
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -15));
+	printf("%i\n", printf("%x ", -15));
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -16));
+	printf("%i\n", printf("%x ", -16));
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -99));
+	printf("%i\n", printf("%x ", -99));
+	ft_printf("----------------------------------\n");
+	ft_printf("%i\n", ft_printf("%x ", -100));
+	printf("%i\n", printf("%x ", -100));
+	ft_printf("----------------------------------\n");
+} */

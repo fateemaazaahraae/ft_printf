@@ -1,2 +1,1 @@
-# ft_printf
-This is a 42 Network printf project
+This is printf project (1337BG - 42 Network)
