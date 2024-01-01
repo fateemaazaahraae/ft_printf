@@ -4,5 +4,5 @@
 <p>This project consists of coding a library that contains a simplified version (more
 information below) of the printf function.</p> <br><br>
 
-<h1>Final Grade : </h1>
+<h1>Final Grade : </h1> <br>
 <img width="230" alt="Screen Shot 2024-01-01 at 12 07 28 PM" src="https://github.com/fateemaazaahraae/ft_printf/assets/133344215/551d778a-552f-4e36-9082-7d3acc702459">
